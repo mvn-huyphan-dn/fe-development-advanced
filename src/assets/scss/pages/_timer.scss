@@ -1,0 +1,29 @@
+.page-main {
+  .div-switch,
+  .section-count,
+  .about-count {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .btn-switch {
+    padding: 10px 20px;
+  }
+  .btn-active {
+    background-color: #ccc;
+  }
+  .section-count {
+    .count-clock {
+      margin: 0px 40px;
+    }
+    .clock-toggle__button {
+      padding: 10px;
+    }
+    .clock-timer {
+      margin-top: 10px;
+      border: 1px solid map-get($colors, black);
+      border-radius: 50%;
+      color: map-get($colors, white);
+      background-color: map-get($colors, black);
+    }
+  }
+}
