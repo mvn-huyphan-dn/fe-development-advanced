@@ -1,0 +1,15 @@
+.pagination {
+  .btn-pagi-navigation,
+  .pagination-number {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    &:hover {
+      color: map-get($colors, red);
+    }
+  }
+  .page-active {
+    color: map-get($colors, red);
+  }
+}
