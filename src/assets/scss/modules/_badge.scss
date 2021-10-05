@@ -1,0 +1,49 @@
+.nav-badge {
+  position: absolute;
+  color: #fff;
+  font-size: 9px;
+  padding: 1px 7px 0;
+  border-radius: 50px;
+  top: 50%;
+  line-height: 16px;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: -5px;
+  margin-top: -14px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.badge-new {
+  background: #01bad4;
+}
+
+.badge-sale {
+  background-color: #ffa800;
+}
+
+.action-badge {
+  top: -5px;
+  right: -6px;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  letter-spacing: 0;
+  font-weight: map-get($font-weight, normal);
+  font-size: f-pxRem(10);
+  line-height: 15px;
+  opacity: 1;
+
+  color: #ffffff;
+  background-color: #000000;
+
+  border-radius: 50%;
+
+  position: absolute;
+}
