@@ -1,6 +1,5 @@
 .section-form {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0;
   font-size: f-pxRem(16);
   .form {
     width: 60%;
@@ -75,5 +74,25 @@
     background-color: #ffb3b3;
     padding: 5px 10px;
     border: 1px solid map-get($colors, black)
+  }
+}
+
+.section-users-list {
+  margin-bottom: 30px;
+  .users-list {
+    margin: 0 15px;
+  }
+
+  .users-list-item {
+    padding: 10px;
+    border: 1px solid map-get($colors, black)
+  }
+
+  .users-info {
+    &__firstname,
+    &__lastname,
+    &__email {
+      margin: 10px 0;
+    }
   }
 }

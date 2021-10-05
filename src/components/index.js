@@ -10,6 +10,9 @@ import CategoryItem from "./categoryItem"
 import GalleryItem from "./galleryItem"
 import ServiceItem from "./serviceItem"
 import SectionTitle from "./sectionTitle"
+import useFormFields from "./useFormFields"
+import Loading from "./loading";
+import Pagination from "./pagination";
 
 export {
   HeaderBanner,
@@ -23,5 +26,8 @@ export {
   CategoryItem,
   GalleryItem,
   ServiceItem,
-  SectionTitle
+  SectionTitle,
+  useFormFields,
+  Loading,
+  Pagination
 };
