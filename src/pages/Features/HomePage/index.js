@@ -5,9 +5,9 @@ import {
   GalleryItem,
   ServiceItem,
   SectionTitle
-} from "../../components"
+} from "../../../components"
 
-function Main(props) {
+function HomePage(props) {
   let { categoryDB,
     galleryDB,
     blogDB,
@@ -207,4 +207,4 @@ function Main(props) {
   )
 }
 
-export default Main;
+export default HomePage;

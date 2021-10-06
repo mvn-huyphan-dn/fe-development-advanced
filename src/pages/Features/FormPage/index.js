@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { useFormFields, Loading, Pagination } from "../../components";
-import queryString from 'query-string';
+import React, { useState, useEffect } from "react"
+import queryString from 'query-string'
+import { Loading, Pagination } from '../../../components'
+import { useFormFields } from '../../../hooks'
 
 const url = 'https://reqres.in/api/users'
 
-function MainForm() {
+function FormPage() {
   let [db, setDb] = useState([
     {
       id: 1,
@@ -659,4 +660,4 @@ function MainForm() {
   )
 }
 
-export default MainForm;
+export default FormPage;

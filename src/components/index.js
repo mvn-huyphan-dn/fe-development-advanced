@@ -1,18 +1,17 @@
-import HeaderBanner from "./header-banner";
-import HeaderTop from "./headerTop";
-import HeaderBottom from "./headerBottom";
-import FooterTopCol2 from "./footerTopCol2"
-import PaymentItem from "./paymentItem"
-import SocialItem from "./socialItem"
-import BlogItem from "./blogItem"
-import CarouselItem from "./carouselItem"
-import CategoryItem from "./categoryItem"
-import GalleryItem from "./galleryItem"
-import ServiceItem from "./serviceItem"
-import SectionTitle from "./sectionTitle"
-import useFormFields from "./useFormFields"
-import Loading from "./loading";
-import Pagination from "./pagination";
+import HeaderBanner from "./HeaderBanner";
+import HeaderTop from "./HeaderTop";
+import HeaderBottom from "./HeaderBottom";
+import FooterTopCol2 from "./FooterTopCol"
+import PaymentItem from "./PaymentItem"
+import SocialItem from "./SocialItem"
+import BlogItem from "./BlogItem"
+import CarouselItem from "./CarouselItem"
+import CategoryItem from "./CateforyItem"
+import GalleryItem from "./GalleryItem"
+import ServiceItem from "./ServiceItem"
+import SectionTitle from "./SectionTitle"
+import Loading from "./Loading";
+import Pagination from "./Pagination";
 
 export {
   HeaderBanner,
@@ -27,7 +26,6 @@ export {
   GalleryItem,
   ServiceItem,
   SectionTitle,
-  useFormFields,
   Loading,
   Pagination
 };
