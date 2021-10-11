@@ -1,0 +1,35 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #222;
+  border-radius: 40px;
+  font-weight: 600;
+  height: 40px;
+}
+
+.btn-round {
+  padding: 10px 20px;
+  border: 1px solid map-get($colors, black);
+  color: map-get($colors, black);
+  background-color: map-get($colors, white);
+  &:hover {
+    color: map-get($colors, white);
+    background-color: map-get($colors, black);
+  }
+}
+
+.btn-add-cart {
+  padding: 10px 20px;
+  border: 1px solid map-get($colors, black);
+  color: map-get($colors, black);
+  background-color: map-get($colors, white);
+  &:hover {
+    color: map-get($colors, white);
+    background-color: map-get($colors, black);
+  }
+}
