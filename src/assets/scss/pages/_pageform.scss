@@ -1,0 +1,98 @@
+.section-form {
+  margin: 30px 0;
+  font-size: f-pxRem(16);
+  .form {
+    width: 60%;
+    .form-control {
+      padding: 10px 0;
+    }
+    .form-checkbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    input[type="text"],
+    input[type="password"],
+    textarea,
+    select {
+      font-size: f-pxRem(16);
+      width: 100%;
+    }
+    .btn-submit {
+      padding: 10px 20px;
+      border: 1px solid map-get($colors, black);
+      color: map-get($colors, black);
+      background-color: map-get($colors, white);
+      &:hover {
+        color: map-get($colors, white);
+        background-color: map-get($colors, black);
+      }
+      margin-right: 10px;
+    }
+    .btn-reset {
+      padding: 10px 20px;
+      border: 1px solid map-get($colors, primary);
+      color: map-get($colors, primary);
+      background-color: map-get($colors, white);
+      &:hover {
+        color: map-get($colors, white);
+        background-color: map-get($colors, primary);
+      }
+    }
+    textarea {
+      resize: none;
+    }
+    .span-error {
+      color: map-get($colors, red);
+      font-size: f-pxRem(12);
+    }
+  }
+}
+
+.section-table {
+  font-size: f-pxRem(16);
+  margin: 30px 0px;
+  .table,
+  .th,
+  .td {
+    border: 1px solid map-get($colors, black);
+  }
+  .table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .th,
+  .td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .th {
+    color: map-get($colors, black);
+    font-weight: map-get($font-weight, semibold);
+  }
+  .btn-del {
+    background-color: #ffb3b3;
+    padding: 5px 10px;
+    border: 1px solid map-get($colors, black)
+  }
+}
+
+.section-users-list {
+  margin-bottom: 30px;
+  .users-list {
+    margin: 0 15px;
+  }
+
+  .users-list-item {
+    padding: 10px;
+    border: 1px solid map-get($colors, black)
+  }
+
+  .users-info {
+    &__firstname,
+    &__lastname,
+    &__email {
+      margin: 10px 0;
+    }
+  }
+}
