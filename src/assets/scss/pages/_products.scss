@@ -23,8 +23,17 @@
         height: 300px;
       }
     }
-    .btn-add-cart {
+    .btn-group {
       margin-top: auto;
+      .btn-add-cart {
+        flex: 1 1 auto;
+      }
+      .fav-item-btn {
+        margin-left: 10px;
+      }
+      .icon-heart-fill {
+        color: #e81e63;
+      }
     }
   }
 }

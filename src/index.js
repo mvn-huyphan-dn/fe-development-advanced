@@ -9,19 +9,23 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import { ProvideAuth } from './components';
+import { Provider } from 'react-redux';
+import { store } from './app/store'
 
 const history = createBrowserHistory()
 
 ReactDOM.render(
-  <ProvideAuth>
+  <Provider store={store}>
+    <ProvideAuth>
 
-    <Router history={history}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </Router>
+      <Router history={history}>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </Router>
 
-  </ProvideAuth>
+    </ProvideAuth>
+  </Provider>
   ,
   document.getElementById('root')
 );

@@ -2,8 +2,15 @@ import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/images/logo2.jpg';
 import { useAuth } from "../../hooks";
 
+import { useLocation } from "react-router";
+import { useSelector } from "react-redux";
+
+
 export default function Header() {
   let auth = useAuth();
+  let location = useLocation();
+
+  const favorite = useSelector((state) => state.favorite.favoriteIds)
 
   return (
     <header className="page-header">
@@ -32,10 +39,21 @@ export default function Header() {
         </nav>
         <ul className='header-action flex'>
           <li className='action-item flex-center'>
-            <i className="lar la-heart la-2x icon-heart"></i>
+            <Link to={location.pathname}>
+              <i className="lar la-heart la-2x icon-heart"></i>
+              {!favorite.length ?
+                null :
+                <span className="action-badge fav-badge txt-center">
+                  {favorite.length}
+                </span>
+              }
+            </Link>
           </li>
           <li className='action-item flex-center'>
-            <i className="las la-shopping-cart la-2x icon-cart"></i>
+            <Link to={location.pathname}>
+              <i className="las la-shopping-cart la-2x icon-cart"></i>
+              {/* <span className="action-badge cart-badge txt-center"></span> */}
+            </Link>
           </li>
           <li className='action-item flex-center'>
             <i className="lar la-user la-2x icon-user"></i>

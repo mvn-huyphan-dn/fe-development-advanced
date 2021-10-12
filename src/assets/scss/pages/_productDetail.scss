@@ -7,10 +7,26 @@
     .product-img-container {
       border: 1px solid map-get($colors, black);
       padding: 20px;
+      margin-bottom: auto;
+
+      position: relative;
       img {
         height: 500px;
       }
-      margin-bottom: auto;
+      .fav-item-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+      .icon-heart-fill {
+        color: #e81e63;
+      }
+      .icon-heart {
+        display: none;
+      }
+      &:hover .icon-heart {
+        display: inline-block;
+      }
     }
     .product-category,
     .product-price {

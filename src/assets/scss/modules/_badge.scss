@@ -1,0 +1,19 @@
+.action-badge {
+  top: -5px;
+  right: -6px;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  letter-spacing: 0;
+  font-weight: map-get($font-weight, normal);
+  font-size: f-pxRem(10);
+  line-height: 15px;
+  opacity: 1;
+
+  color: #ffffff;
+  background-color: #000000;
+
+  border-radius: 50%;
+
+  position: absolute;
+}

@@ -1,5 +1,9 @@
 .page-header {
   background-color: #a7b3bd;
+  
+  position: sticky;
+  top: 0;
+  z-index: 100;
   .header-logo {
     width: 64px;
   }
@@ -22,11 +26,9 @@
     margin-left: auto;
     .action-item {
       margin: 0 16px;
-    }
-    .icon-heart {
-      // color: #a7b3bd;
-      // -webkit-text-stroke-width: 1px;
-      // -webkit-text-stroke-color: black;
+      a {
+        position: relative;
+      }
     }
   }
   .btn {
