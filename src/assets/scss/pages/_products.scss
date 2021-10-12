@@ -1,0 +1,39 @@
+.page-main {
+  .section-products {
+    margin-top: 30px;
+    .product-list {
+      padding: 0 15px;
+      .product-item {
+        padding: 25px;
+      }
+      .product-category {
+        color: map-get($colors, gray);
+        margin: 10px 0;
+      }
+      .product-price {
+        font-weight: map-get($font-weight, normal);
+        color: map-get($colors, gray);
+        margin: 5px 0;
+      }
+    }
+    .div-image-container {
+      border: 1px solid map-get($colors, black);
+      padding: 20px;
+      img {
+        height: 300px;
+      }
+    }
+    .btn-group {
+      margin-top: auto;
+      .btn-add-cart {
+        flex: 1 1 auto;
+      }
+      .fav-item-btn {
+        margin-left: 10px;
+      }
+      .icon-heart-fill {
+        color: #e81e63;
+      }
+    }
+  }
+}

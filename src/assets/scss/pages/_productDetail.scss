@@ -1,0 +1,53 @@
+.page-main {
+  .section-product-detail {
+    margin-top: 50px;
+    .card {
+      max-width: 1200px;
+    }
+    .product-img-container {
+      border: 1px solid map-get($colors, black);
+      padding: 20px;
+      margin-bottom: auto;
+
+      position: relative;
+      img {
+        height: 500px;
+      }
+      .fav-item-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+      .icon-heart-fill {
+        color: #e81e63;
+      }
+      .icon-heart {
+        display: none;
+      }
+      &:hover .icon-heart {
+        display: inline-block;
+      }
+    }
+    .product-category,
+    .product-price {
+      color: map-get($colors, gray);
+    }
+    .product-category,
+    .product-name,
+    .product-pr,
+    .product-description {
+      margin-bottom: 30px;
+    }
+    .card-body {
+      height: 100%;
+      .btn {
+        width: 40%;
+      }
+    }
+    .product-review {
+      i {
+        background-color: map-get($colors, yellow);
+      }
+    }
+  }
+}

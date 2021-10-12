@@ -1,0 +1,15 @@
+.page-footer {
+  background-color: map-get($colors, gray);
+  color: map-get($colors, white);
+  font-size: f-pxRem(16);
+  .copyright {
+    margin: 0 15px;
+    padding: 20px 15px;
+    a {
+      color: map-get($colors, white);
+      &:hover {
+        color: map-get($colors, cyan);
+      } 
+    }
+  }
+}
